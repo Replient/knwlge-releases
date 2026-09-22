@@ -9,7 +9,7 @@ Each release carries the platform tarballs, `checksums.txt` and an install scrip
 # macOS
 brew install replient/tap/knwlge-enterprise
 # Linux / macOS
-curl -fsSL https://github.com/Replient/knwlge-releases/releases/latest/download/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Replient/knwlge-releases/main/install.sh | sh
 
 knwlge-enterprise setup
 ```
@@ -22,11 +22,11 @@ Docs: https://knwlge.com/docs/getting-started/enterprise
 ```bash
 brew install replient/tap/knwlge
 # or
-curl -fsSL https://github.com/Replient/knwlge-releases/releases/latest/download/install-cli.sh | sh
+curl -fsSL https://raw.githubusercontent.com/Replient/knwlge-releases/main/install-cli.sh | sh
 
 knwlge init --api-url https://your-enterprise-server
 ```
 
-Releases are tagged `enterprise-v<version>` and `cli-v<version>`; `latest` points at the newest
-Enterprise Server release. Source: [knwlge-enterprise](https://github.com/Replient/knwlge-enterprise)
+Releases are tagged `enterprise-v<version>` and `cli-v<version>`; the install scripts on `main` pick the newest tag of their product (GitHub's `latest` is not used because two products share this repo). Source:
+[knwlge-enterprise](https://github.com/Replient/knwlge-enterprise)
 (private) and [knwlge-cli](https://github.com/Replient/knwlge-cli) (private).
