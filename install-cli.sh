@@ -38,7 +38,8 @@ temporary shell-only runtime):
 
   macOS:   brew install node@22
   Linux:   https://nodejs.org/en/download/package-manager
-  Windows: https://nodejs.org/en/download (then run this script from Git Bash or WSL)
+  Windows: this script is for macOS and Linux (and WSL). In PowerShell, use install-cli.ps1 from the same place:
+           irm https://raw.githubusercontent.com/Replient/knwlge-releases/main/install-cli.ps1 | iex
 
 Re-run this script after `node --version` reports v22 or newer.
 EOF

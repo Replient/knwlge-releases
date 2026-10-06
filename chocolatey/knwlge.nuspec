@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>knwlge</id>
+    <version>1.0.3</version>
+    <title>Knwlge CLI</title>
+    <authors>Replient</authors>
+    <owners>Replient</owners>
+    <copyright>2026 Replient</copyright>
+    <projectUrl>https://knwlge.com</projectUrl>
+    <iconUrl>https://knwlge.com/favicon-192.png</iconUrl>
+    <licenseUrl>https://knwlge.com/terms</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://knwlge.com/docs</docsUrl>
+    <packageSourceUrl>https://github.com/Replient/knwlge-releases/tree/main/chocolatey</packageSourceUrl>
+    <releaseNotes>https://github.com/Replient/knwlge-releases/releases/tag/cli-v1.0.3</releaseNotes>
+    <tags>knwlge cli ai developer-tools mcp claude-code cursor codex</tags>
+    <summary>Sign in to a Knwlge Enterprise Server and wire AI coding assistants to your team's shared context.</summary>
+    <description><![CDATA[`knwlge` connects a developer's machine to a Knwlge Enterprise Server. It signs in, wires AI coding
+assistants (Claude Code, Cursor, Codex and GitHub Copilot) to the server, and runs the local sidecar that serves
+task-scoped team context into those assistants through hooks and MCP.
+
+## After installing
+
+```
+knwlge init --api-url https://your-enterprise-server
+```
+
+## Notes
+
+- knwlge runs on Node.js 22 or newer, which this package installs through its `nodejs-lts` dependency. When a
+  suitable Node.js is already installed another way, add `--ignore-dependencies` to keep it.
+- Chocolatey owns this copy's files, so it does not update itself in the background: `knwlge update` says when a newer
+  release exists and installs it with `choco upgrade knwlge`, which needs an elevated terminal.
+- The package downloads the release from https://github.com/Replient/knwlge-releases and checks its SHA-256.
+]]></description>
+    <dependencies>
+      <dependency id="nodejs-lts" version="22.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
