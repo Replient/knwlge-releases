@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>knwlge</id>
-    <version>1.0.3</version>
+    <version>1.0.5</version>
     <title>Knwlge CLI</title>
     <authors>Replient</authors>
     <owners>Replient</owners>
@@ -13,7 +13,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://knwlge.com/docs</docsUrl>
     <packageSourceUrl>https://github.com/Replient/knwlge-releases/tree/main/chocolatey</packageSourceUrl>
-    <releaseNotes>https://github.com/Replient/knwlge-releases/releases/tag/cli-v1.0.3</releaseNotes>
+    <releaseNotes>https://github.com/Replient/knwlge-releases/releases/tag/cli-v1.0.5</releaseNotes>
     <tags>knwlge cli ai developer-tools mcp claude-code cursor codex</tags>
     <summary>Sign in to a Knwlge Enterprise Server and wire AI coding assistants to your team's shared context.</summary>
     <description><![CDATA[`knwlge` connects a developer's machine to a Knwlge Enterprise Server. It signs in, wires AI coding

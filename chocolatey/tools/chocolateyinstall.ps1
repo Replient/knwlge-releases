@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$tarball = Join-Path $toolsDir 'knwlge-1.0.3.tgz'
+$tarball = Join-Path $toolsDir 'knwlge-1.0.5.tgz'
 $packageDir = Join-Path $toolsDir 'package'
 
 if (Test-Path -LiteralPath $packageDir) {
@@ -10,8 +10,8 @@ if (Test-Path -LiteralPath $packageDir) {
 
 Get-ChocolateyWebFile -PackageName $env:ChocolateyPackageName `
   -FileFullPath $tarball `
-  -Url 'https://github.com/Replient/knwlge-releases/releases/download/cli-v1.0.3/knwlge-1.0.3.tgz' `
-  -Checksum '421102b86bb0efa1db6ca3461f82d9583e550f6af5af17443e49993d89e650a9' `
+  -Url 'https://github.com/Replient/knwlge-releases/releases/download/cli-v1.0.5/knwlge-1.0.5.tgz' `
+  -Checksum 'e4efa656b5f4680cac55309a3f76f152e179d831c540e6f76bc19a40dd9a4c9d' `
   -ChecksumType 'sha256'
 
 # The release is a gzipped tar that holds every runtime dependency: the first pass yields the tar, the second its files.
